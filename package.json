@@ -1,7 +1,7 @@
 {
   "name": "@slickteam/nestjs-pg-typeorm",
   "description": "Module for Postgresql Typeorm with Nestjs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "keywords": [
     "Slickteam",
     "Nestjs",
@@ -45,7 +45,7 @@
   },
   "prettier": "@slickteam/prettier",
   "volta": {
-    "node": "20.17.0",
-    "npm": "10.8.3"
+    "node": "20.18.0",
+    "npm": "10.9.0"
   }
 }
