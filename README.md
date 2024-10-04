@@ -36,6 +36,20 @@ POSTGRESQL_MIGRATION_PATH=dist/migration/*.js
 class ExempleModule {}
 ```
 
+## Commands for package.json
+
+```json
+{
+  "scripts": {
+    "migration:drop": "typeorm-ts-node-commonjs schema:drop -d ./node_modules/@slickteam/nestjs-pg-typeorm/dist/database-config.js",
+    "migration:show": "typeorm-ts-node-commonjs migration:show -d ./node_modules/@slickteam/nestjs-pg-typeorm/dist/database-config.js",
+    "migration:create": "typeorm-ts-node-commonjs migration:create",
+    "migration:run": "typeorm-ts-node-commonjs migration:run -d ./node_modules/@slickteam/nestjs-pg-typeorm/dist/database-config.js",
+    "migration:revert": "typeorm-ts-node-commonjs migration:revert -d ./node_modules/@slickteam/nestjs-pg-typeorm/dist/database-config.js"
+  }
+}
+```
+
 ## Dependencies version
 
 Nestjs
