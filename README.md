@@ -1,5 +1,7 @@
 # Slick Nestjs Postresql Typeorm
 
+Available on npmjs.org : [@slickteam/nestjs-pg-typeorm](https://www.npmjs.com/package/@slickteam/nestjs-pg-typeorm)
+
 ## Usage
 
 - Install dependency
@@ -54,12 +56,12 @@ class ExempleModule {}
 
 Nestjs
 
-- `@nestjs/common`: `^10.4.4`
-- `@nestjs/config`: `^3.2.3`
+- `@nestjs/common`: `^10.4.7`
+- `@nestjs/config`: `^3.3.0`
 
 Pg
 
-- `pg`: `^8.13.0`
+- `pg`: `^8.13.1`
 
 Typeorm
 
