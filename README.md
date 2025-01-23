@@ -22,7 +22,7 @@ POSTGRESQL_MAX_POOL_SIZE=25
 # Optionnel
 POSTGRESQL_SYNCHRONIZE=false
 POSTGRESQL_LOGGER=
-POSTGRESQL_ENTITY_PATH=dist/**/*.entity.js,dist/**/**/*.entity.js
+POSTGRESQL_ENTITY_PATH=dist/**/*.entity.js,dist/**/*Entity.js,dist/**/**/*.entity.js,dist/**/**/*Entity.js
 POSTGRESQL_MIGRATION_PATH=dist/migration/*.js
 ```
 
@@ -56,8 +56,8 @@ class ExempleModule {}
 
 Nestjs
 
-- `@nestjs/common`: `^10.4.7`
-- `@nestjs/config`: `^3.3.0`
+- `@nestjs/common`: `^11.0.4`
+- `@nestjs/config`: `^4.0.0`
 
 Pg
 
@@ -65,5 +65,5 @@ Pg
 
 Typeorm
 
-- `@nestjs/typeorm`: `^10.0.2`
+- `@nestjs/typeorm`: `^11.0.0`
 - `typeorm`: `^0.3.20`
