@@ -1,5 +1,13 @@
 import { Module } from '@nestjs/common';
-import { InjectDataSource, InjectEntityManager, InjectRepository, TypeOrmModule } from '@nestjs/typeorm';
+import {
+  InjectDataSource,
+  InjectEntityManager,
+  InjectRepository,
+  TypeOrmModule,
+  TypeOrmModuleAsyncOptions,
+  TypeOrmModuleOptions,
+  TypeOrmOptionsFactory,
+} from '@nestjs/typeorm';
 
 import { databaseSettings } from './database-config';
 
@@ -15,4 +23,13 @@ export * from 'typeorm';
 })
 class DatabaseModule {}
 
-export { DatabaseModule, InjectDataSource, InjectEntityManager, InjectRepository };
+export {
+  DatabaseModule,
+  TypeOrmModule,
+  TypeOrmModuleAsyncOptions,
+  TypeOrmModuleOptions,
+  TypeOrmOptionsFactory,
+  InjectDataSource,
+  InjectEntityManager,
+  InjectRepository,
+};
