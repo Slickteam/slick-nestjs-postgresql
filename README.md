@@ -24,6 +24,7 @@ POSTGRESQL_SYNCHRONIZE=false
 POSTGRESQL_LOGGER=
 POSTGRESQL_ENTITY_PATH=dist/**/*.entity.js,dist/**/*Entity.js,dist/**/**/*.entity.js,dist/**/**/*Entity.js
 POSTGRESQL_MIGRATION_PATH=dist/migration/*.js
+POSTGRESQL_LOGGING=
 ```
 
 - In module where you want use this module, add this :
@@ -56,12 +57,12 @@ class ExempleModule {}
 
 Nestjs
 
-- `@nestjs/common`: `^11.0.8`
+- `@nestjs/common`: `^11.0.10`
 - `@nestjs/config`: `^4.0.0`
 
 Pg
 
-- `pg`: `^8.13.1`
+- `pg`: `^8.13.3`
 
 Typeorm
 

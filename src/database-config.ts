@@ -19,6 +19,7 @@ export const databaseSettings: DataSourceOptions = {
   database: process.env.POSTGRESQL_ADDON_DB,
   synchronize: process.env.POSTGRESQL_SYNCHRONIZE === 'true',
   logger: postgresLogger(),
+  logging: process.env.POSTGRESQL_LOGGING === 'true',
   poolSize: Number(process.env.POSTGRESQL_MAX_POOL_SIZE),
   entities: process.env.POSTGRESQL_ENTITY_PATH?.split(',') ?? [
     'dist/**/*entity.js',
