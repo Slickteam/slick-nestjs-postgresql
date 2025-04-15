@@ -1,7 +1,7 @@
 {
   "name": "@slickteam/nestjs-pg-typeorm",
   "description": "Module for Postgresql Typeorm with Nestjs",
-  "version": "1.2.0-RC0.2",
+  "version": "1.2.0",
   "keywords": [
     "Slickteam",
     "Nestjs",
