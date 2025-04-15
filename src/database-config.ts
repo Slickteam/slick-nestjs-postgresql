@@ -30,4 +30,4 @@ export const databaseSettings: DataSourceOptions = {
   migrations: [process.env.POSTGRESQL_MIGRATION_PATH ?? 'dist/migration/*.js'],
 };
 
-export default new DataSource(databaseSettings);
+export default new DataSource(databaseSettings).initialize();
