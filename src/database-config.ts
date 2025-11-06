@@ -1,7 +1,7 @@
 import { config } from 'dotenv';
 import { DataSource, DataSourceOptions } from 'typeorm';
 
-config();
+config({ quiet: true });
 
 function postgresLogger(): 'advanced-console' | 'simple-console' | 'file' | 'debug' | undefined {
   const loggerType = process.env.POSTGRESQL_LOGGER;
