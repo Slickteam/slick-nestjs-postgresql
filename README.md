@@ -143,29 +143,45 @@ All TypeORM exports (Entity, Column, Repository, etc.) are also available direct
 
 ## Migration Commands
 
-Add the following scripts to your `package.json`:
+This package provides the `slick-migration` CLI for managing database migrations.
+
+### Using with npx
+
+```bash
+npx slick-migration <command> [options]
+```
+
+### Using with package.json scripts
 
 ```json
 {
   "scripts": {
-    "migration:create": "typeorm-ts-node-commonjs migration:create",
-    "migration:run": "typeorm-ts-node-commonjs migration:run -d ./node_modules/@slickteam/nestjs-pg-typeorm/dist/database-config.js",
-    "migration:revert": "typeorm-ts-node-commonjs migration:revert -d ./node_modules/@slickteam/nestjs-pg-typeorm/dist/database-config.js",
-    "migration:show": "typeorm-ts-node-commonjs migration:show -d ./node_modules/@slickteam/nestjs-pg-typeorm/dist/database-config.js",
-    "migration:drop": "typeorm-ts-node-commonjs schema:drop -d ./node_modules/@slickteam/nestjs-pg-typeorm/dist/database-config.js"
+    "migration:create": "slick-migration create",
+    "migration:generate": "slick-migration generate",
+    "migration:run": "slick-migration run",
+    "migration:revert": "slick-migration revert",
+    "migration:show": "slick-migration show",
+    "migration:drop": "slick-migration drop"
   }
 }
 ```
 
 ### Commands Reference
 
-| Command            | Description                          |
-| ------------------ | ------------------------------------ |
-| `migration:create` | Create a new migration file          |
-| `migration:run`    | Run pending migrations               |
-| `migration:revert` | Revert the last executed migration   |
-| `migration:show`   | Show all migrations and their status |
-| `migration:drop`   | Drop the database schema             |
+| Command    | Description                            | Example                                            |
+| ---------- | -------------------------------------- | -------------------------------------------------- |
+| `create`   | Create a new empty migration file      | `slick-migration create src/migrations/CreateUser` |
+| `generate` | Generate a migration from schema changes | `slick-migration generate src/migrations/AddEmail` |
+| `run`      | Run pending migrations                 | `slick-migration run`                              |
+| `revert`   | Revert the last executed migration     | `slick-migration revert`                           |
+| `show`     | Show all migrations and their status   | `slick-migration show`                             |
+| `drop`     | Drop the database schema               | `slick-migration drop`                             |
+
+### Help
+
+```bash
+npx slick-migration --help
+```
 
 ## Dependencies
 
