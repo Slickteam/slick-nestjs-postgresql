@@ -168,14 +168,14 @@ npx slick-migration <command> [options]
 
 ### Commands Reference
 
-| Command    | Description                            | Example                                            |
-| ---------- | -------------------------------------- | -------------------------------------------------- |
-| `create`   | Create a new empty migration file      | `slick-migration create src/migrations/CreateUser` |
+| Command    | Description                              | Example                                            |
+| ---------- | ---------------------------------------- | -------------------------------------------------- |
+| `create`   | Create a new empty migration file        | `slick-migration create src/migrations/CreateUser` |
 | `generate` | Generate a migration from schema changes | `slick-migration generate src/migrations/AddEmail` |
-| `run`      | Run pending migrations                 | `slick-migration run`                              |
-| `revert`   | Revert the last executed migration     | `slick-migration revert`                           |
-| `show`     | Show all migrations and their status   | `slick-migration show`                             |
-| `drop`     | Drop the database schema               | `slick-migration drop`                             |
+| `run`      | Run pending migrations                   | `slick-migration run`                              |
+| `revert`   | Revert the last executed migration       | `slick-migration revert`                           |
+| `show`     | Show all migrations and their status     | `slick-migration show`                             |
+| `drop`     | Drop the database schema                 | `slick-migration drop`                             |
 
 ### Help
 
