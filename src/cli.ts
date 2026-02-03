@@ -10,12 +10,12 @@ const restArgs = args.slice(1).join(' ');
 const dataSourcePath = resolve(__dirname, 'database-config.js');
 
 const commands: Record<string, string> = {
-  create: `typeorm-ts-node-commonjs migration:create ${restArgs}`,
-  generate: `typeorm-ts-node-commonjs migration:generate -d ${dataSourcePath} ${restArgs}`,
-  run: `typeorm-ts-node-commonjs migration:run -d ${dataSourcePath} ${restArgs}`,
-  revert: `typeorm-ts-node-commonjs migration:revert -d ${dataSourcePath} ${restArgs}`,
-  show: `typeorm-ts-node-commonjs migration:show -d ${dataSourcePath} ${restArgs}`,
-  drop: `typeorm-ts-node-commonjs schema:drop -d ${dataSourcePath} ${restArgs}`,
+  create: `typeorm migration:create ${restArgs}`,
+  generate: `typeorm migration:generate -d ${dataSourcePath} ${restArgs}`,
+  run: `typeorm migration:run -d ${dataSourcePath} ${restArgs}`,
+  revert: `typeorm migration:revert -d ${dataSourcePath} ${restArgs}`,
+  show: `typeorm migration:show -d ${dataSourcePath} ${restArgs}`,
+  drop: `typeorm schema:drop -d ${dataSourcePath} ${restArgs}`,
 };
 
 function printHelp(): void {
