@@ -1,7 +1,7 @@
 {
   "name": "@slickteam/nestjs-pg-typeorm",
   "description": "Module for Postgresql Typeorm with Nestjs",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "keywords": [
     "Slickteam",
     "Nestjs",
@@ -41,23 +41,23 @@
     "prettier:fix": "slick-prettier --cache --write ."
   },
   "dependencies": {
-    "@nestjs/common": "11.1.17",
-    "@nestjs/config": "4.0.3",
-    "@nestjs/typeorm": "11.0.0",
-    "dotenv": "17.3.1",
-    "pg": "8.20.0",
-    "typeorm": "0.3.28"
+    "@nestjs/common": "11.1.27",
+    "@nestjs/config": "4.0.4",
+    "@nestjs/typeorm": "11.0.3",
+    "dotenv": "17.4.2",
+    "pg": "8.22.0",
+    "typeorm": "1.0.0"
   },
   "devDependencies": {
-    "@nestjs/cli": "11.0.16",
+    "@nestjs/cli": "11.0.23",
     "@slickteam/prettier": "2.0.5",
     "@trivago/prettier-plugin-sort-imports": "6.0.2",
-    "@types/node": "25.5.0",
-    "prettier": "3.8.1",
-    "ts-loader": "9.5.4",
+    "@types/node": "26.1.0",
+    "prettier": "3.9.4",
+    "ts-loader": "9.6.2",
     "ts-node": "10.9.2",
     "tsconfig-paths": "4.2.0",
-    "typescript": "5.9.3"
+    "typescript": "6.0.3"
   },
   "prettier": "@slickteam/prettier"
 }
